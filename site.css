@@ -1,52 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
-    <title>Website URL title</title>
-</head>
-
-<body>
-    <main id="main">
-        <h1 id="title">Masaru Ibuka</h1>
-        <div id="img-div">
-            <img 
-                id = "image" 
-                src= "https://prabook.com/web/show-photo.jpg?id=15800&cache=false"
-                alt= " Masaru Ibuka photo"    
-            />
-            <div id = "img-caption">
-                <strong>Masaru Ibuka, Founder of Sony</strong>
-            </div>
-        </div>
-        <section id = "tribute-info">
-            <h3><u>Time line of Masaru Ibuka</u></h3>
-            <div id = "time-line">
-                <ul>
-                    <li>1908 - Born in Nikko City, Tochigi Prefecture, Japan, April 11.</li>
-                    <li>1933 - Graduated from Waseda University in Science and Engineering.</li>
-                    <li>1933 - Invented a modulated-light transmission system.</li>
-                    <li>1931 - Worked at a photo-chemical laboratory where he researched sound recording technology.</li>
-                    <li>1945 - Founded Tokyo-Tsushin Kenkyusho (Tokyo Telecommunications Laboratory) Co.</li>
-                    <li>1946 - Founded Tokyo-Tsushin-Kogyo Co. (Tokyo Telecommunications Engineering Corporation) with Akio Morita.</li>
-                    <li>1949 - Developed magnetic recording tapes</li>
-                    <li>1958 - Company name officially changed to Sony Corporation</li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <a
-                id="tribute-link"
-                href="https://ethw.org/Masaru_Ibuka"
-                target="_blank"
-            >Click here for more Info
-            </a>
-
-        </section>
-        <nav></nav>
-    </main>
-</body>
-
-</html>
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: hsl(10, 50%, 95%);
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+/* For mobile phones: */
+@media only screen and (max-width:500px) {
+    .menu, #main, .right {
+      max-width: 100%;
+    }
+  }
+#image{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height:25%;
+    width:25%;
+}
+#timeline{
+    background-color: hsl(0, 6%, 73%);
+    text-align: center;
+    font-size:16px;
+}
+#img-div{
+    background-color: hsl(7, 12%, 87%);
+    font-size: 30px;
+}
+ul{
+    text-align: left;
+}
+li{
+    padding-bottom: 5px;
+}
+#tribute-link:hover{
+    font-size: 16px;
+}
